@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const tagButtons = document.querySelectorAll('.tag-btn');
   const articles = document.querySelectorAll('.filterable');
   
-  let currentTag = 'gettingstarted';
+  let currentTag = 'all';
   let searchQuery = '';
 
   function filterArticles() {
