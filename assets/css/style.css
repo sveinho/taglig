@@ -1,1 +1,246 @@
-styling assa
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #333;
+  overflow-y: scroll; 
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.global-navigation {
+  background-color: #1e293b;
+  margin: -40px -20px 40px -20px;
+  padding: 12px 20px;
+  width: calc(100% + 40px);
+}
+
+.global-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.global-navigation li {
+  display: block;
+}
+
+.global-navigation a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s;
+}
+
+.global-navigation a:hover {
+  background-color: #334155;
+  color: #fff;
+}
+
+.global-navigation a.active {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.page-layout {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.main-content {
+  width: 100%;
+  display: block;
+}
+
+.filter-controls {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  width: 100%;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.control-row label {
+  font-weight: bold;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.control-row-tags {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.filter-label {
+  font-weight: bold;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.tag-filters-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.tag-btn {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-btn:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.tag-btn.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.docs-container {
+  display: block;
+  width: 100%;
+}
+
+.filterable {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #64748b;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 100%;
+  display: block; 
+}
+
+.filterable h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #1e293b;
+}
+
+.tag-container {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Dynamiske tag-farger basert på klassenavn */
+.tag-gettingstarted { background-color: #64748b; }
+.tag-researcher { background-color: #10b981; }
+.tag-manager { background-color: #f59e0b; }
+.tag-trainer { background-color: #8b5cf6; }
+
+.error-msg {
+  color: #ef4444;
+  font-weight: bold;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .global-navigation {
+    margin: 0 0 25px 0; 
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+  }
+  .global-navigation ul {
+    flex-direction: column; 
+    gap: 5px;
+  }
+  .global-navigation a {
+    display: block; 
+    padding: 10px 12px;
+  }
+  .control-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .control-row label {
+    width: auto;
+  }
+  .control-row-tags {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .filter-label {
+    width: auto;
+  }
+  input[type="text"] {
+    max-width: 100%;
+  }
+}
+
