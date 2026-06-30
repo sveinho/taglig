@@ -1,1 +1,13 @@
+title: All about file format identification
+description: Lær alt om identifisering av filformater.
 
+# Navigasjonsmeny (Topic 2, 3, 4 lenker direkte til sider du oppretter)
+navigation:
+  - title: File formats
+    url: /
+  - title: Topic 2
+    url: /topic2/
+  - title: Topic 3
+    url: /topic3/
+  - title: Topic 4
+    url: /topic4/
