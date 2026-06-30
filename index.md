@@ -1,6 +1,6 @@
 ---
 layout: page
-title: File formats
-headline: Understanding file format identification
+title: Introduction
+headline: Introduction to the Support-kit
 permalink: /
 ---
