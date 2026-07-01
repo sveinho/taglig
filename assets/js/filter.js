@@ -36,12 +36,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Nullstill-knapp
+  // Nullstill-knapp
   resetBtn.addEventListener('click', function() {
-    searchInput.value = '';
-    searchQuery = '';
-    resetBtn.classList.add('invisible');
-    filterArticles();
+    searchInput.value = ''; // Tømmer tekstfeltet i HTML
+    searchQuery = '';       // Tømmer søkevariabelen i JS
+    resetBtn.classList.add('invisible'); // Skjuler reset-knappen
+    
+    searchInput.focus();    // Setter markøren tilbake i feltet (valgfritt, men god UX)
+    filterArticles();       // Kjører filteret på nytt (beholder aktiv currentTag)
   });
+
 
   // Tag-knapper
   tagButtons.forEach(button => {
