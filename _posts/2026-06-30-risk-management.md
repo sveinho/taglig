@@ -14,7 +14,8 @@ These are the elements outlined in John Gruber’s original design document. All
 ## H2
 ### H3
 
-### Bold
+<img width="681" height="274" alt="image" src="https://github.com/user-attachments/assets/45df492d-2e98-4b7e-96a4-f23727e9e95b" />
+
 
 **bold text**
 
