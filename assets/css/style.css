@@ -20,9 +20,9 @@ body {
 
 .global-navigation {
   background-color: #1e293b;
-  margin: -20px -10px 20px -10px;
+  margin: -10px -5px 10px -5px;
   padding: 12px 20px;
-  width: calc(100% + 20px);
+  width: calc(100% + 5px);
 }
 
 .global-navigation ul {
